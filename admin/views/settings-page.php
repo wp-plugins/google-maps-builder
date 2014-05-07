@@ -27,7 +27,7 @@
 				<div class="col-md-9">
 					<h1 class="main-heading"><?php _e( 'Welcome to Google Maps Builder', $this->plugin_slug ); ?> <?php echo $this->meta['Version']; ?></h1>
 
-					<p class="main-subheading"><?php _e( 'Thanks for using Google Maps Builder', $this->plugin_slug ); ?> <?php echo $this->meta['Version']; ?>. <?php _e( 'To get started, read over the documentation, take a gander at the settings, and build yourself some maps! If you enjoy this plugin please consider telling a friend, following us or purchasing the Pro edition.', $this->plugin_slug ); ?></p>
+					<p class="main-subheading"><?php _e( 'Thanks for using Google Maps Builder', $this->plugin_slug ); ?> <?php echo $this->meta['Version']; ?>. <?php _e( 'To get started, read over the documentation, take a gander at the settings, and build yourself some maps! If you enjoy this plugin please consider telling a friend, following us or purchasing the Pro edition (coming soon!).', $this->plugin_slug ); ?></p>
 					<?php include( 'social-media.php' ); ?>
 
 				</div>
