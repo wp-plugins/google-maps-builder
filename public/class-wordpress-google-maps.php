@@ -256,7 +256,7 @@ class Google_Maps_Builder {
 	 *                                       WPMU is disabled or plugin is
 	 *                                       activated on an individual blog.
 	 */
-	public function activate( $network_wide ) {
+	public static function activate( $network_wide ) {
 
 		//Remove Welcome Message Meta so User Sees it Again
 		global $current_user;

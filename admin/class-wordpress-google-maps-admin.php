@@ -69,23 +69,42 @@ class Google_Maps_Builder_Admin {
 		add_action( 'cmb_render_search_options', array( $this, 'cmb_render_search_options' ), 10, 2 );
 		add_action( 'cmb_render_width_height', array( $this, 'cmb_render_width_height' ), 10, 2 );
 		add_action( 'cmb_render_lat_lng', array( $this, 'cmb_render_lat_lng' ), 10, 2 );
-
+		add_action( 'post_submitbox_misc_actions', array( $this, 'gmb_add_shortcode_to_publish_metabox' ) );
 
 
 	}
 
+	/**
+	 *
+	 * Add Shortcode to Publish Metabox
+	 *
+	 */
+	public function gmb_add_shortcode_to_publish_metabox() {
 
+		global $post;
+		//Shortcode column with select all input
+		$shortcode = htmlentities( '[google_maps id="' . $post->ID . '"]' );
+		echo '<div class="shortcode-wrap box-sizing"><label>' . __('Map Shortcode:', $this->plugin_slug) . '</label><input onClick="this.setSelectionRange(0, this.value.length)" type="text" class="shortcode-input" readonly value="' . $shortcode . '"></div>';
+
+	}
+
+	/**
+	 * Get Default Map Options
+	 *
+	 * Helper function that returns default map options from settings
+	 * @return array
+	 */
 	public function get_default_map_options() {
 
 		$width_height = gmb_get_option( 'gmb_width_height' );
-//		$lat_lng = gmb_get_option( 'gmb_lat_lng' );
+		//		$lat_lng = gmb_get_option( 'gmb_lat_lng' );
 
-		$defaults     = array(
+		$defaults = array(
 			'width'      => ( isset( $width_height['width'] ) ) ? $width_height['width'] : '100',
 			'width_unit' => ( isset( $width_height['map_width_unit'] ) ) ? $width_height['map_width_unit'] : '%',
 			'height'     => ( isset( $width_height['height'] ) ) ? $width_height['height'] : '600',
-//			'latitude'     => ( isset( $lat_lng['latitude'] ) ) ? $lat_lng['latitude'] : '600',
-//			'longitude'     => ( isset( $lat_lng['longitude'] ) ) ? $lat_lng['longitude'] : '600',
+			//			'latitude'     => ( isset( $lat_lng['latitude'] ) ) ? $lat_lng['latitude'] : '600',
+			//			'longitude'     => ( isset( $lat_lng['longitude'] ) ) ? $lat_lng['longitude'] : '600',
 		);
 
 		return $defaults;
@@ -161,8 +180,8 @@ class Google_Maps_Builder_Admin {
 			$maps_data = array(
 				'api_key'           => $api_key,
 				'geolocate_setting' => isset( $geolocate['geolocate_map'] ) ? $geolocate['geolocate_map'] : 'yes',
-				'default_lat' => isset( $geolocate['latitude'] ) ? $geolocate['latitude'] : '32.715738',
-				'default_lng' => isset( $geolocate['longitude'] ) ? $geolocate['longitude'] : '-117.16108380000003',
+				'default_lat'       => isset( $geolocate['latitude'] ) ? $geolocate['latitude'] : '32.715738',
+				'default_lng'       => isset( $geolocate['longitude'] ) ? $geolocate['longitude'] : '-117.16108380000003',
 				'plugin_url'        => GMB_PLUGIN_URL,
 				'snazzy'            => json_encode( $snazzy )
 			);
@@ -174,8 +193,6 @@ class Google_Maps_Builder_Admin {
 
 
 	}
-
-
 
 
 	/**
@@ -244,7 +261,7 @@ class Google_Maps_Builder_Admin {
 				array(
 					'id'          => $prefix . 'markers_group',
 					'type'        => 'group',
-					'description' => __('Generatemap m marke. You may update marker data here in bulk ps', $this->plugin_slug ),
+					'description' => __( 'Generatemap m marke. You may update marker data here in bulk ps', $this->plugin_slug ),
 					'options'     => array(
 						'add_button'    => __( 'Add Another Marker', $this->plugin_slug ),
 						'remove_button' => __( 'Remove Marker', $this->plugin_slug ),

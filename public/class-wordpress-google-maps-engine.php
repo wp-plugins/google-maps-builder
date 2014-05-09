@@ -208,8 +208,7 @@ class Google_Maps_Builder_Engine {
 	 *
 	 * @return    object    A single instance of this class.
 	 */
-	public
-	static function get_instance() {
+	public static function get_instance() {
 
 		// If the single instance hasn't been set, set it now.
 		if ( null == self::$instance ) {

@@ -19,6 +19,12 @@
 	transition: 0.2s all linear;
 }
 
+.box-sizing {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
 #gmb_markers_group_repeat {
 	/*display: none;*/
 }
@@ -61,6 +67,22 @@
 	padding-right: 16px;
 }
 
+/*Shortcode Input */
+
+.shortcode-wrap {
+	margin: 1px 14px 12px 11px;
+}
+
+.shortcode-wrap label {
+	margin: 0 0 3px;
+	display: block;
+	cursor: default;
+}
+
+.shortcode-input {
+	margin: 0;
+	width: 100%;
+}
 
 /*------------------------------------------
  CMB Interface
