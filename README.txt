@@ -34,11 +34,11 @@ Want to add some pazazz to your maps? [Snazzy Maps](http://snazzymaps.com/) them
 
 = Granular Map Control =
 
-Fine tune your Google Maps with full control over settings for street view, zooming, panning, dragging, and more. Set defaults for each controls so each new map you create is just the way you like it.
+Fine tune your Google Maps with full control over settings for street view, zooming, panning, dragging, and more. Set defaults for each control so each new map you create is just the way you like it.
 
 = Actively Developed and Supported =
 
-This plugin is currently being actively developed, which means consistent improvements and enhancements. As well, we won't shy away from bug fixes and further code refractoring and optimization.
+This plugin is actively developed and supported. This means you can expect an answer in the forums and consistent improvements and enhancements to the plugin itself. As well, we won't shy away from bug fixes or code refactoring and optimization.
 
 == Installation ==
 
