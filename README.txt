@@ -1,10 +1,10 @@
 === Google Maps Builder ===
-Contributors: wordimpress, dlocc, webdevmattcrom
+Contributors: dlocc, wordimpress
 Donate link: http://wordimpress.com/
 Tags: google maps, google map, google map widget, google map shortcode, maps, map, wp map, wp google maps, google maps directions, google maps builder, google maps plugin, google places, google places api, google maps api, google places reviews
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,11 +34,11 @@ Want to add some pazazz to your maps? [Snazzy Maps](http://snazzymaps.com/) them
 
 = Granular Map Control =
 
-Fine tune your Google Maps with full control over settings for street view, zooming, panning, dragging, and more. Set defaults for each control so each new map you create is just the way you like it.
+Fine tune your Google Maps with full control over settings for street view, zooming, panning, dragging, and more. Set defaults for each controls so each new map you create is just the way you like it.
 
 = Actively Developed and Supported =
 
-This plugin is actively developed and supported. This means you can expect an answer in the forums and consistent improvements and enhancements to the plugin itself. As well, we won't shy away from bug fixes or code refactoring and optimization.
+This plugin is currently being actively developed, which means consistent improvements and enhancements. As well, we won't shy away from bug fixes and further code refractoring and optimization.
 
 == Installation ==
 
@@ -136,6 +136,9 @@ Bug Fixes
 5. **Settings Panel** - Adjust the various plugin settings using a UI that is built using WordPress' own styles.
 
 == Changelog ==
+= 1.0.2 =
+* Remove Maps Shortcode field from Posts and Pages (thanks [@kalenjohnson](https://github.com/WordImpress/google-maps-builder/pull/1) )
+* Fixed Default Menu Position Issue
 
 = 1.0.1 =
 * New: Added a custom meta field to the Google Map single post screen that outputs the post's shortcode so it's more easily accessible. Before you could only access the shortcode via the Google Maps post listing page.
