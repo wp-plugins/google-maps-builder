@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CMB Theme Options
  * @version 0.1.0
@@ -305,7 +306,7 @@ class Google_Maps_Builder_Settings {
 				),
 				array(
 					'name' => __( 'Places API Key', $this->plugin_slug ),
-					'desc' => sprintf( __( 'API keys are manage through the <a href="%1$s" class="new-window" target="_blank" class="new-window">Google API Console</a>. For more information please see <a href="%2$s"  class="new-window" title="Google Places API Introduction">this article</a>.', $this->plugin_slug ), esc_url( 'https://code.google.com/apis/console/?noredirect' ), esc_url( 'https://developers.google.com/places/documentation/#Authentication' ) ),
+					'desc' => sprintf( __( 'API keys are manage through the <a href="%1$s" class="new-window" target="_blank" class="new-window">Google API Console</a>. For more information please see <a href="%2$s" target="_blank" class="new-window" title="Google Places API Introduction">this article</a>.', $this->plugin_slug ), esc_url( 'https://code.google.com/apis/console/?noredirect' ), esc_url( 'https://developers.google.com/places/documentation/#Authentication' ) ),
 					'id'   => $prefix . 'api_key',
 					'type' => 'text',
 				),
