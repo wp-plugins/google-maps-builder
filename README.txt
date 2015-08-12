@@ -12,9 +12,14 @@ One Google Maps plugin to rule them all. Google Maps Builder is intuitive, sleek
 
 == Description ==
 
-Google Maps Builder isn't just another Google Maps plugin. It's built from the ground up to be the easiest, most intuitive and fastest Google Maps plugin for WordPress. Visually build powerful customized Google Maps to use on your WordPress site quickly and easily without ever having to touch a bit of code.
+###Maps Builder 2.0 is Coming###
+With 10,000+ Active Installs we thought it was high-time to kick it up a notch with Maps Builder. We've launched a "Beta Campaign" to get feedback on our new features and look and feel. We've also built a phenomenal Pro version which we'll be giving away free licenses for in our Mascot Naming Contest. Here's all the relevant information you'll need to get your hands on it now and contribute and maybe WIN the contest.
+_____________________________________________________________
+[Blog Article](https://wordimpress.com/maps-builder-2-0-is-coming-and-you-can-help/)  |  [Feedback Form](https://wordimpress.com/maps-builder-beta-campaign/)  |  [Github](https://github.com/WordImpress/google-maps-builder/issues)
 
 = Plugin Highlights: =
+
+Google Maps Builder isn't just another Google Maps plugin. It's built from the ground up to be the easiest, most intuitive and fastest Google Maps plugin for WordPress. Visually build powerful customized Google Maps to use on your WordPress site quickly and easily without ever having to touch a bit of code.
 
 * **Google Places API integration** - Display nearby business locations and points of interest complete with ratings, custom marker icon
 * **Snazzy Maps integration** - Create truly unique Google Map themes that look great with any design powered by [Snazzy Maps](http://snazzymaps.com/).
@@ -104,32 +109,9 @@ The main developer of this plugin is WordImpress. To find out more information a
 
 == Roadmap ==
 
-Here is what we are working on for future releases:
-
-= Enhancements =
-
-* Directions - Add the ability to add a directions link to each marker location
-* Marker Visibility - Add the ability to set a marker's info window open by default
-* Marker Clustering - Add the option to use marker clusters for when you have multiple markers in close proximity
-* Maps Widget - Build in a widget to output Google Maps
-* Custom Map Marker Images - Ability to upload your own map marker images
-* Map Icons: Fix maps icon overlap issue when they are bunched in an area (zIndex issue)
-* Draggable Markers - Add the ability to drag dropped markers in the build UI
-* Admin JS i18n - Please contact us at info@wordimpress.com to volunteer for translating!
-* Public JS i18n - Please contact us at info@wordimpress.com to volunteer for translating!
-* Google Places - Add the ability to remove place information
-* Google Places - Pagination for markers, the ability to set number of markers
-* Google Places - Customize the individual place markers
-* Markers - Add the ability to drag markers to new positions (lat, lng) in builder.
-* Info Window - Add a WYSIWYG editor? Possible complications with this.
-* Custom Map Themes - Add the ability for users to add their own map styles
-
-= Known Issues =
-
-* Info Window - FOUC: Investigate why sometimes pointer tip of info window flashes before it opens (mainly Chrome)
-* Chrome - Look into while map tiles have strange lines in between
-* Firefox - Clicking on a marker to open the same info window creates content overflow
-* Bug: Fix issue where selecting "None" for map controls doesn't actually work on frontend
+With 10,000+ Active Installs we thought it was high-time to kick it up a notch with Maps Builder. We've launched a "Beta Campaign" to get feedback on our new features and look and feel. We've also built a phenomenal Pro version which we'll be giving away free licenses for in our Mascot Naming Contest. Here's all the relevant information you'll need to get your hands on it now and contribute and maybe WIN the contest.
+_____________________________________________________________
+[Blog Article](https://wordimpress.com/maps-builder-2-0-is-coming-and-you-can-help/)  |  [Feedback Form](https://wordimpress.com/maps-builder-beta-campaign/)  |  [Github](https://github.com/WordImpress/google-maps-builder/issues)
 
 == Screenshots ==
 
@@ -142,6 +124,9 @@ Here is what we are working on for future releases:
 4. **Frontend View** - A view the a map on the frontend of a WordPress site using the TwentyTwelve theme. This map displays various Google Places.
 
 5. **Settings Panel** - Adjust the various plugin settings using a UI that is built using WordPress' own styles.
+
+== Upgrade Notice ==
+Version 1.0.3 will soon be updated to 2.0. [Find details here](https://wordimpress.com/maps-builder-2-0-is-coming-and-you-can-help/)
 
 == Changelog ==
 
